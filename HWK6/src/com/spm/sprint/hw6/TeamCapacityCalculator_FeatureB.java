@@ -2,8 +2,20 @@ package com.spm.sprint.hw6;
 
 import java.util.List;
 
+/**
+* This java class TeamCapacityCalculator_FeatureB is designed to provide the name, daysOff,
+* daysForCeremonies and hoursPerDay of the particular employees and number of sprint days utilized by the team member as an individual to 
+* calculate team effort-hour capacity of each of the individual and the team effort-hour in total as well.
+*/ 
 public class TeamCapacityCalculator_FeatureB {
 
+	/**
+	* This method takes in the input as the name, daysOff, daysForCeremonies and hoursPerDay of the particular employee
+	* as part of the class TeamMember_FeatureB and the number of sprint days utilized by the team member as an individual parameter to 
+	* calculate team effort-hour capacity of each of the individual and the team effort-hour in total as well. 
+	* @param int i.e., the number of sprint days utilized by the team member.
+	* @param TeamMember_FeatureB i.e., the name, daysOff, daysForCeremonies and hoursPerDay of the particular employees.
+	*/ 
     public static void calculateTeamCapacity(int sprintDays, List<TeamMember_FeatureB> teamMembers) {
         int totalHours = 0;
         try {
@@ -26,7 +38,7 @@ public class TeamCapacityCalculator_FeatureB {
                 new TeamMember_FeatureB("Tester1", 1, 2, 6),
                 new TeamMember_FeatureB("Tester2", 0, 2, 7) // input per team member
         );
-        calculateTeamCapacity(10, teamMembers);
+        calculateTeamCapacity(10, teamMembers); // the first input would be the number of sprint days utilized by the employye and the second parameter is the list of TeamMember_FeatureB objects created above.
 
 	}
 

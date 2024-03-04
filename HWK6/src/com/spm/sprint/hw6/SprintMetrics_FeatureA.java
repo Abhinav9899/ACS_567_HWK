@@ -7,7 +7,7 @@ package com.spm.sprint.hw6;
 public class SprintMetrics_FeatureA {
 
 	/**
-	* This method taked the input of the previous sprint points acheived and calulates the latest sprint
+	* This method takes in the input of the previous sprint points acheived and calulates the latest sprint
 	* velocity of the team per date.
 	* @param int[] i.e., the list of the current and the previous sprint points.
 	* @return double i.e., the average velocity of the team achived till date.
