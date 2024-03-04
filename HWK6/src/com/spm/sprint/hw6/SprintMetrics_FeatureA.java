@@ -5,13 +5,17 @@ public class SprintMetrics_FeatureA {
 	// Feature A: Calculate team's average velocity
     public static double calculateAverageVelocity(int[] completedPoints) {
         if (completedPoints == null || completedPoints.length == 0) {
-            System.out.println("Input array is null or empty");
+            throw new IllegalArgumentException("Input array is null or empty");
         }
-        int sum = 0;
-        for (int points : completedPoints) {
-            sum += points;
-        }
-        return (double) sum / completedPoints.length;
+        try {
+			int sum = 0;
+			for (int points : completedPoints) {
+				sum += points;
+			}
+			return (double) sum / completedPoints.length;
+		} catch (Exception e) {
+			throw new IllegalArgumentException("Error during calculation, please check th einput values");
+		}
     }
 
     public static void main(String[] args) {
