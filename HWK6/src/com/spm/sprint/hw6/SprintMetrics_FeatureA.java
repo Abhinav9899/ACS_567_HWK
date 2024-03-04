@@ -23,7 +23,7 @@ public class SprintMetrics_FeatureA {
 			}
 			return (double) sum / completedPoints.length;
 		} catch (Exception e) {
-			throw new IllegalArgumentException("Error during calculation, please check th einput values");
+			throw new IllegalArgumentException("Error during calculation, please check the input values");
 		}
     }
 
