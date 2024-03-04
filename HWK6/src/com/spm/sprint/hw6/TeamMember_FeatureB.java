@@ -1,5 +1,9 @@
 package com.spm.sprint.hw6;
 
+/**
+* This java class TeamMember_FeatureB is designed to hold and maintain all the team member details like name, daysOff,
+* daysForCeremonies and hoursPerDay, which will be used for further calulcation regarding feature B.
+*/ 
 public class TeamMember_FeatureB {
 
 	String memberName;
