@@ -2,7 +2,7 @@ package com.spm.sprint.hw6;
 
 /**
 * This java class SprintMetrics_FeatureA is created take the input of previous completion points and calculate
-* the avergage team velocity achieved till date in the occured sprints.
+* the average team velocity achieved till date in the occured sprints.
 */ 
 public class SprintMetrics_FeatureA {
 
