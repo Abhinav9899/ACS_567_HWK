@@ -6,13 +6,18 @@ public class TeamCapacityCalculator_FeatureB {
 
     public static void calculateTeamCapacity(int sprintDays, List<TeamMember_FeatureB> teamMembers) {
         int totalHours = 0;
-        for (TeamMember_FeatureB member : teamMembers) {
-            int workingDays = sprintDays - (member.daysOff + member.daysForCeremonies);
-            int memberHours = workingDays * member.hoursPerDay;
-            System.out.println(member.memberName +" Available Hours: " + memberHours);
-            totalHours += memberHours;
-        }
-        System.out.println("Total Team Available Hours: " + totalHours);
+        try {
+			for (TeamMember_FeatureB member : teamMembers) {
+				int workingDays = sprintDays - (member.daysOff + member.daysForCeremonies);
+				int memberHours = workingDays * member.hoursPerDay;
+				System.out.println(member.memberName + " Available Hours: " + memberHours);
+				totalHours += memberHours;
+			}
+			System.out.println("Total Team Available Hours: " + totalHours);
+		} catch (Exception e) {
+			// TODO: handle exception
+			throw new IllegalArgumentException("Error during calculation, please check the input values");
+		}
     }
 
 	public static void main(String[] args) {
